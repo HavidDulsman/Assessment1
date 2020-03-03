@@ -35,7 +35,16 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	return ""
+	len1 = len(input1)
+	len2 = len(input2)
+
+	if len1 > len2:
+		return input1
+	if len2 > len1:
+		return input2
+	if len1 == len2:
+		return input1, input2
+	
 
 
 
@@ -62,8 +71,12 @@ def one(input1, input2):
 	
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
-def two(input):
-	return ""
+def two(var):
+	bert_lowercase = var.lower()
+    bert = "bert"
+    if bert in var:
+        newword = var.replace(bert,"")
+	return newword
 
 
 
@@ -88,7 +101,14 @@ def two(input):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	if arg1 % 3 == 0 and arg1 % 5 == 0:
+        return "fizzbuzz"
+    elif arg1 % 3 == 0:
+        return "fizz"
+    elif arg1 % 5 == 0:
+        return "buzz"
+	else:
+		return "null"
 
 
 	# <QUESTION 4>
@@ -114,6 +134,11 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
+	all_numbers = []
+	splitted = arg1.split()
+	for i in splited
+
+
 	return 0
 
 	# <QUESTION 5>
@@ -142,6 +167,8 @@ def four(arg1):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
+	for 
+
 	return []
 
 	# <QUESTION 6>
@@ -163,6 +190,14 @@ def five(input):
 
 
 def six(input):
+	if "cei" in input:
+		return True
+	for i in range(len(input)-1):
+		if i == 0:
+			continue
+		elif input[1] == "i" and input[i+1] =="e" and input[i-1] != "c":
+			return True
+	
     return False
 
 	# <QUESTION 7>
@@ -179,8 +214,16 @@ def six(input):
 
 	# How do we ignore case in a String? help(str) may offer some insight.
 
-def seven(input):
-    return 0
+def seven(seven_input):
+	lowercase = seven_input.lower()
+	vowel_count = {}
+	for vowel in "aeiou"
+		count = lowercase.count(vowel)
+		vowel_count[vowel] = count
+	counts = vowel_count.values()
+	total_vowels = sum(counts)
+	return total_vowels
+
 
 	# <QUESTION 8>
 
@@ -197,8 +240,11 @@ def seven(input):
 
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
-def eight(input):
-	return 1
+def eight(eight_input):
+	count = 1
+	for i n range(i,eight_input+1):
+		count *=i
+	return  count
 
 	# <QUESTION 9>
 
@@ -219,8 +265,16 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	return -1
-
+	pot = None
+	for i in range(0, len(input_string)):
+		if inputString[i] == char:
+			pot = i + 1
+			break
+	if pot = None:
+		return -1
+	else:
+		return ("Character {} is present at {}".format(char, str(pot)))
+	
 	# <QUESTION 10>
 
     # Given a string, int and a char, return a boolean value if the 'nth' 
@@ -238,5 +292,10 @@ def nine(inputString, char):
 
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
-def ten(string, int, char):
-	return False
+def ten(string, int_val, char):
+
+	string = string.lower())
+	if int_val > len(string):
+		return False
+	return (True if string[int -1]==char else False
+
